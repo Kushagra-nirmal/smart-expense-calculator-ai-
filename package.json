@@ -1,0 +1,27 @@
+{
+  "name": "smart-expense-tracker-ai",
+  "version": "2.0.0",
+  "description": "Smart Expense Tracker AI - Full Stack Intelligent Personal Finance Application",
+  "main": "Backend/server.js",
+  "scripts": {
+    "install:all": "npm --prefix Backend install && npm --prefix Frontend install",
+    "build": "npm --prefix Backend install && npm --prefix Frontend install && npm --prefix Frontend run build",
+    "start": "node Backend/server.js",
+    "dev:backend": "npm --prefix Backend run dev",
+    "dev:frontend": "npm --prefix Frontend run dev",
+    "dev": "node Backend/server.js",
+    "cap:sync": "npm --prefix Frontend run cap:sync",
+    "cap:open": "npm --prefix Frontend run cap:open",
+    "build:android": "npm --prefix Frontend run build:android"
+  },
+  "keywords": [
+    "expense-tracker",
+    "ai",
+    "react",
+    "nodejs",
+    "express",
+    "finance",
+    "chartjs"
+  ],
+  "license": "ISC"
+}

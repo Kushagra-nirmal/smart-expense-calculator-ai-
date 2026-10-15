@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "d9b0f5b4-63aa-40df-9c66-bab48d30cebc",
+    "user": "901bdcac-d22b-4c6d-97f8-ce0d4b9966f4",
+    "title": "cold drink",
+    "amount": 10,
+    "category": "food",
+    "type": "Expense",
+    "date": "2026-10-14T00:00:00.000Z",
+    "createdAt": "2026-10-14T16:12:04.206Z",
+    "updatedAt": "2026-10-14T16:12:04.206Z"
+  },
+  {
+    "_id": "d89d9184-c8e2-45f7-a1d0-0b9ee33b979c",
+    "user": "901bdcac-d22b-4c6d-97f8-ce0d4b9966f4",
+    "title": "student",
+    "amount": 50,
+    "category": "Salary",
+    "type": "Income",
+    "date": "2026-10-14T00:00:00.000Z",
+    "createdAt": "2026-10-14T16:12:31.286Z",
+    "updatedAt": "2026-10-14T16:12:31.286Z"
+  }
+]

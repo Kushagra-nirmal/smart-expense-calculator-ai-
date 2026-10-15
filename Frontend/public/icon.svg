@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
+    </linearGradient>
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- App Background with Rounded Corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)"/>
+  <rect width="510" height="510" x="1" y="1" rx="111" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+
+  <!-- Glowing Accent Backlight -->
+  <circle cx="256" cy="240" r="140" fill="url(#primary-grad)" opacity="0.25" filter="url(#glow)"/>
+
+  <!-- Modern Wallet + AI Diamond Emblem -->
+  <g transform="translate(106, 110)">
+    <!-- Main Wallet Card Body -->
+    <rect x="20" y="50" width="260" height="190" rx="28" fill="url(#primary-grad)" filter="url(#glow)"/>
+    <rect x="20" y="50" width="260" height="190" rx="28" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+    
+    <!-- Top Flap -->
+    <path d="M 20 110 L 280 110" stroke="rgba(0,0,0,0.25)" stroke-width="4"/>
+
+    <!-- Credit Card / Flow Accent -->
+    <rect x="50" y="20" width="200" height="130" rx="16" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <circle cx="90" cy="55" r="14" fill="url(#accent-cyan)"/>
+    <rect x="120" y="50" width="90" height="10" rx="5" fill="rgba(255,255,255,0.5)"/>
+
+    <!-- Central AI Brain/Chip Badge -->
+    <circle cx="220" cy="145" r="32" fill="#0b0f19" stroke="url(#accent-cyan)" stroke-width="4"/>
+    <!-- Currency / Diamond Symbol -->
+    <path d="M 220 128 L 232 142 L 220 162 L 208 142 Z" fill="url(#accent-cyan)"/>
+    <circle cx="220" cy="145" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- App Label Mini Badge -->
+  <rect x="156" y="405" width="200" height="36" rx="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <text x="256" y="429" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="2">EXPENSE AI</text>
+</svg>
